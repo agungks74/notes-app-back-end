@@ -83,7 +83,7 @@ class UsersHandler {
 
   async getUsersByUsernameHandler(request, h) {
     try {
-      const {username = ''} = request.query;
+      const { username = '' } = request.query;
 
       const users = await this._service.getUsersByUsername(username);
 
